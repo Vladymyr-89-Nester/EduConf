@@ -1,6 +1,8 @@
 body {
   font-family: "Inter", sans-serif;
   color: #03030a;
+  line-height: 1.5;
+  background-color: #FFFFFF;
 }
 
 h1,
