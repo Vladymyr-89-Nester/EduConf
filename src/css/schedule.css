@@ -1,0 +1,202 @@
+body {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #03030a;
+  background-color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ----------------Mobile Schedule--------------- */
+
+.schedule {
+  padding: 64px 0;
+}
+.schedule .container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.schedule-title {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.schedule .text-section {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.schedule-speakers {
+  margin-bottom: 40px;
+}
+.schedule-speakers .schedule-items {
+  border-top: 2px solid #03030a;
+  padding: 32px 0px;
+}
+.schedule-items .time {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.schedule-items .topic {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+.schedule-items .tags {
+  font-weight: 600;
+  font-size: 14px;
+  border: 2px solid #03030a;
+  border-radius: 4px;
+  padding: 4px 10px;
+  height: 29px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.schedule-items .tags-wrapper {
+  display: inline-flex;
+  gap: 16px;
+}
+.schedule-items .who-where-wrapper {
+  display: none;
+}
+
+.scroll-to-registr {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid #3444c5;
+  border-radius: 6px;
+  padding: 10px 24px;
+  background-color: #3444c5;
+  width: 100%;
+  transition: border 250ms linear, background-color 250ms linear,
+    color 250ms linear;
+}
+.scroll-to-registr:hover,
+.scroll-to-registr:focus {
+  border: 1px solid #3444c5;
+  background-color: #fff;
+  color: #03030a;
+}
+.scroll-to-registr:active {
+  border: 1px solid #3444c5;
+  background-color: #d6d9f3;
+}
+/* .scroll-to-registr:disabled {
+  color: #fff;
+  border: 1px solid #3444c5;
+  background: #3444c5;
+  opacity: 0.3;
+} */
+
+/* ----------Tablet Schedule------------- */
+@media screen and (min-width: 768px) {
+  .schedule .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .schedule .text-section {
+    max-width: 519px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .schedule-speakers .schedule-items {
+    display: flex;
+    align-items: center;
+  }
+  .schedule-items .who-where-wrapper {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+  .schedule-items .time {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+  .schedule-items .topic {
+    margin-bottom: 0;
+  }
+  .schedule-items .topic-tags-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .scroll-to-registr {
+    max-width: 192px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* -------------Desktop Schedule-------------- */
+@media screen and (min-width: 1440px) {
+  .schedule {
+    padding: 92px 0;
+  }
+  .schedule .container {
+    max-width: 1440px;
+    padding: 0, 64px;
+  }
+  .schedule .schedule-title {
+    font-size: 48px;
+  }
+  .schedule-speakers .topic-tags-wrapper {
+    flex-direction: row;
+    gap: 16px;
+    flex-grow: 1;
+  }
+  .schedule-items .who-where-wrapper {
+    max-width: 336px;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .who-where-wrapper .where {
+    flex-grow: 1;
+  }
+  .who-where-wrapper .who {
+    flex-grow: 1;
+  }
+}
