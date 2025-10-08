@@ -1,16 +1,5 @@
 /* ----------------Mobile Schedule--------------- */
-.container {
-  margin-right: auto;
-  margin-left: auto;
-}
-.schedule {
-  padding: 64px 0;
-}
-.schedule .container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 .schedule-title {
   font-family: 'Teachers', sans-serif;
   font-weight: 700;
