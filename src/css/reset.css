@@ -1,3 +1,8 @@
+body {
+  font-family: "Inter", sans-serif;
+  color: #03030a;
+}
+
 h1,
 h2,
 h3,
@@ -27,4 +32,15 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
