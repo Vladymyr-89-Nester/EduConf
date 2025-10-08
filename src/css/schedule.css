@@ -1,46 +1,8 @@
-body {
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #03030a;
-  background-color: #fff;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-button {
-  font-family: inherit;
-  color: currentColor;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-section {
-  margin-left: auto;
-  margin-right: auto;
-}
+/* ----------------Mobile Schedule--------------- */
 .container {
   margin-right: auto;
   margin-left: auto;
 }
-
-/* ----------------Mobile Schedule--------------- */
-
 .schedule {
   padding: 64px 0;
 }
