@@ -1,0 +1,108 @@
+@media screen and (max-width: 1439px) {
+  .header-nav-list,
+  .header-register-btn {
+    display: none;
+  }
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-header-icon {
+  max-width: 164px;
+}
+
+.burger-menu-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  width: 48px;
+  height: 48px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .header.container {
+    max-width: 768px;
+    padding: 0px 32px;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0px 64px;
+  }
+
+  .burger-menu-btn,
+  .burger-menu {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-header-icon {
+    margin-right: 24px;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 32px;
+    white-space: nowrap;
+  }
+
+  .header-nav-link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .header-register-btn {
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #3444c5;
+    border-radius: 6px;
+    width: 192px;
+    height: 44px;
+    color: #fff;
+    background: #3444c5;
+  }
+
+  .header-register-btn:hover,
+  .header-register-btn:focus {
+    color: #03030a;
+    background: transparent;
+  }
+
+  .header-register-btn:active {
+    color: #03030a;
+    background: #d6d9f3;
+  }
+
+  .header-register-btn:disabled {
+    color: #fff;
+    background: #3444c5;
+    opacity: 0.3;
+  }
+}
