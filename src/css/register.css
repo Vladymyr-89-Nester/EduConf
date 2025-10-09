@@ -1,0 +1,78 @@
+.register-title {
+    font-family: "Teachers", sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+
+.register-text {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.register-label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.register-input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    outline: transparent;
+    border: 2px solid #03030a;
+    border-radius: 6px;
+    padding: 8px 12px;
+    height: 48px;
+    margin-bottom: 24px;
+    transition: border 250ms linear;
+}
+
+.register-input:focus {
+    border: 2px solid #3444c5;
+}
+
+.register-input:focus:invalid {
+    border: 2px solid #9c0000;
+    color: #9c0000;
+}
+
+.register-input:focus:invalid::placeholder {
+    color: #9c0000;
+}
+
+.register-input::placeholder {
+    color: rgba(3, 3, 10, 0.6);
+    transition: color 250ms linear;
+}
+
+.register-form-btn {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    padding: 10px 0;
+    background-color: #3444c5;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #FFFFFF;
+    transition: background-color 250ms linear, border 250ms linear, color 250ms linear;
+}
+
+.register-form-btn:hover,
+.register-form-btn:focus {
+    background-color: transparent;
+    border: 1px solid #3444c5;
+    color: #03030a;
+}
+
+.register-form-btn:active {
+    background-color: #d6d9f3;
+}
+
+.register-input:focus:invalid~.register-form-btn {
+    opacity: 0.3;
+    pointer-events: none;
+}
