@@ -17,6 +17,7 @@ p {
     padding-bottom: 92px;
 }
 .hero-title {
+    font-family: var(--second-family);
     font-weight: 700;
         font-size: 56px;
         line-height: 120%;
@@ -38,11 +39,11 @@ p {
         font-size: 16px;
         line-height: 150%;
         color: #ffffff;
-       
+        border: 1px solid transparent;
 }
 .hero-button:hover,
 .hero-button:focus {
-    border: 1px;
+    border: 2px solid #3444C5;
     background-color: #ffffff;
     border-color: #3444C5;
     color: #03030A;
