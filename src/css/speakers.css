@@ -1,0 +1,135 @@
+/* #region TOTAL */
+:root {
+  --main-color: #03030a;
+}
+
+.speakers-section {
+  margin-top: 64px;
+}
+@media screen and (min-width: 1440px) {
+  .speakers-section {
+    margin-top: 92px;
+  }
+}
+.speakers-intro {
+  max-width: 375px;
+  padding: 40px 20px 64px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .speakers-intro {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .speakers-intro {
+    min-width: 1440px;
+    padding: 40px 64px 92px;
+  }
+}
+/* #endregion TOTAL */
+
+/* #region 1 */
+/* #end
+region 1 */
+
+.speakers-header {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--main-color);
+  padding-bottom: 40px;
+}
+.speakers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .speakers-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .speakers-list {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .speakers-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .speakers-item {
+    width: calc((100% - 32px * 3) / 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.speaker-foto {
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .speaker-foto {
+    width: 336px;
+    height: 336px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .speaker-foto {
+    width: 304px;
+    height: 304px;
+  }
+}
+
+.speakers-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--main-color);
+}
+
+.skeakers-academics-position {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--main-color);
+  padding-bottom: 16px;
+}
+.speakers-about {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-color);
+  padding-bottom: 16px;
+  width: 331px;
+}
+@media screen and (min-width: 768px) {
+  .speakers-about {
+    width: 333px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .speakers-about {
+    width: 302px;
+  }
+}
+.social-list {
+  display: flex;
+  gap: 14px;
+}
+.social-item {
+}
+.social-item-icon {
+}
