@@ -143,9 +143,9 @@
   .menu-list {
     align-items: center;
   }
-}
 
-.menu-register-btn {
-  display: block;
-  width: 256px;
+  .menu-register-btn {
+    display: block;
+    width: 256px;
+  }
 }
