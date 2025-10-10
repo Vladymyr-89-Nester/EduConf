@@ -2,805 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduConf</title>
-
-    <!--  ! normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!--  ! fonts -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Teachers:wght@700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- ! STYLES -->
-
-    <script type="module" crossorigin src="/EduConf/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/EduConf/assets/index-DhpERKht.css">
+    <title>Vanilla App Template</title>
+    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
   </head>
   <body>
-    
+    <header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="nav-logo" href="./index.html" aria-label="Site logo">
+        <svg class="nav-logo-icon" width="100" height="30">
+          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
     <main>
       <!-- Loads the specified .html file -->
-      
-
-      
-      <section class="speakers-section">
-  <div class="speakers-intro">
-    <h2 class="speakers-header">Meet our Speakers</h2>
-
-    <ul class="speakers-list">
-      <!-- #region  David -->
-      <li class="speakers-item">
-        <div class="speakers-wrapper">
-          <picture>
-            <source
-              srcset="../img-project/speakers/desc/david-johnson.jpg 1x, ../img-project/speakers/desc/david-johnson@2x.jpg 2x"
-              media="(min-width: 1440px)" />
-            <source
-              srcset="../img-project/speakers/retina/david-johnson.jpg 1x, ../img-project/speakers/retina/david-johnson@2x.jpg 2x"
-              media="(min-width: 768px)" />
-            <img
-              srcset="../img-project/speakers/mob/david-johnson@2x.jpg 2x"
-              src="../img-project/speakers/mob/david-johnson.jpg"
-              alt="Prof. David Johnson"
-              class="speaker-foto"
-              width="335"
-              height="335"
-          /></picture>
-
-          <h3 class="speakers-name">Prof. David Johnson</h3>
-          <p class="skeakers-academics-position">
-            Professor of Educational Policy
-          </p>
-        </div>
-        <div class="social-wrapper">
-          <p class="speakers-about">
-            With over 20 years of experience in shaping educational frameworks,
-            Professor Johnson will moderate our panel discussion, bringing his
-            deep understanding of policy and practice to the forefront of the
-            conversation.
-          </p>
-          <ul class="social-list">
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-linkedIn">/</use>
-              </svg>
-            </li>
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-x-social">/</use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- #endregion  David -->
-
-      <!-- #region Evelin -->
-      <li class="speakers-item">
-        <div class="social-wrapper">
-          <picture>
-            <source
-              srcset="../img-project/speakers/desc/evelyn-smith.jpg 1x, ../img-project/speakers/desc/evelyn-smith@2x.jpg 2x"
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="../img-project/speakers/retina/evelyn-smith.jpg 1x, ../img-project/speakers/retina/evelyn-smith@2x.jpg 2x"
-              media="(min-width: 768px)"
-            />
-            <img
-              srcset="../img-project/speakers/mob/evelyn-smith@2x.jpg 2x"
-              src="../img-project/speakers/mob/evelyn-smith.jpg"
-              alt="Dr. Evelyn Smith"
-              class="speaker-foto"
-              width="335"
-              height="335"
-            />
-          </picture>
-          <h3 class="speakers-name">Dr. Evelyn Smith</h3>
-          <p class="skeakers-academics-position">
-            Educational Futurist & Marketing Guru
-          </p>
-        </div>
-        <div class="social-wrapper">
-          <p class="speakers-about">
-            Dr. Smith is a renowned thought leader on the intersection of
-            education and marketing. Her opening keynote will set the stage for
-            the future of learning, and her later session will provide marketing
-            strategies for educational institutions.
-          </p>
-          <ul class="social-list">
-            <ul class="social-list">
-              <li class="social-item">
-                <svg class="social-item-icon" width="24" height="24">
-                  <use href="../img-project/icons.svg#icon-x-social">/</use>
-                </svg>
-              </li>
-            </ul>
-          </ul>
-        </div>
-      </li>
-      <!-- #endregion Evelin -->
-
-      <!-- #region Kenji  -->
-      <li class="speakers-item">
-        <div class="social-wrapper">
-          <picture>
-            <source
-              srcset="../img-project/speakers/desc/kenji-brown.jpg 1x, ../img-project/speakers/desc/kenji-brown@2x.jpg 2x"
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="../img-project/speakers/retina/kenji-brown.jpg 1x, ../img-project/speakers/retina/kenji-brown@2x.jpg 2x"
-              media="(min-width: 768px)"
-            />
-            <img
-              srcset="../img-project/speakers/mob/kenji-brown@2x.jpg 2x"
-              src="../img-project/speakers/mob/kenji-brown.jpg"
-              alt="Dr. Kenji Brown"
-              class="speaker-foto"
-              width="335"
-              height="335"
-            />
-          </picture>
-          <h3 class="speakers-name">Dr. Kenji Brown</h3>
-          <p class="skeakers-academics-position">CEO of EduInnovate Corp.</p>
-        </div>
-        <div class="social-wrapper">
-          <p class="speakers-about">
-            As the founder of a leading EdTech startup, Dr. Brown is at the
-            cutting edge of educational innovation. His session will explore
-            transformative technologies that are shaping the future of
-            education.
-          </p>
-          <ul class="social-list">
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-instagram">/</use>
-              </svg>
-            </li>
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-x-social">/</use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- #endregion Kenji  -->
-
-      <!-- #region Lee -->
-      <li class="speakers-item">
-        <div class="social-wrapper">
-          <picture>
-            <source
-              srcset="../img-project/speakers/desc/chloe-lee.jpg 1x, ../img-project/speakers/desc/chloe-lee@2x.jpg 2x"
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="../img-project/speakers/retina/chloe-lee.jpg 1x, ../img-project/speakers/retina/chloe-lee@2x.jpg 2x"
-              media="(min-width: 768px)"
-            />
-            <img
-              srcset="../img-project/speakers/mob/chloe-lee@2x.jpg 2x"
-              src="../img-project/speakers/mob/chloe-lee.jpg"
-              alt="Ms. Chloe Lee"
-              class="speaker-foto"
-              width="335"
-              height="335"
-            />
-          </picture>
-          <h3 class="speakers-name">Ms. Chloe Lee</h3>
-          <p class="skeakers-academics-position">
-            Lead AI & Machine Learning Researcher
-          </p>
-        </div>
-        <div class="social-wrapper">
-          <p class="speakers-about">
-            Ms. Lee specializes in the application of artificial intelligence in
-            learning environments. She will demystify complex AI concepts and
-            showcase the latest innovations during her sessions on AI and
-            Machine Learning basics.
-          </p>
-          <ul class="social-list">
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-linkedIn">/</use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- #endregion Lee -->
-
-      <!-- #region Aarav -->
-      <li class="speakers-item">
-        <div class="social-wrapper">
-          <picture>
-            <source
-              srcset="../img-project/speakers/desc/aarav-patel.jpg 1x, ../img-project/speakers/desc/aarav-patel@2x.jpg 2x"
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="../img-project/speakers/retina/aarav-patel.jpg 1x, ../img-project/speakers/retina/aarav-patel@2x.jpg 2x"
-              media="(min-width: 768px)"
-            />
-            <img
-              srcset="../img-project/speakers/mob/aarav-patel@2x.jpg 2x"
-              src="../img-project/speakers/mob/aarav-patel.jpg"
-              alt="Dr. Aarav Patel"
-              class="speaker-foto"
-              width="335"
-              height="335"
-            />
-          </picture>
-          <h3 class="speakers-name">Dr. Aarav Patel</h3>
-          <p class="skeakers-academics-position">
-            UX Strategist & Design Thinking Expert
-          </p>
-        </div>
-        <div class="social-wrapper">
-          <p class="speakers-about">
-            Dr. Patel champions human-centered design in technology. He will
-            lead a hands-on workshop on Design Thinking and share his expertise
-            on creating intuitive user experiences for educational platforms.
-          </p>
-          <ul class="social-list">
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-instagram">/</use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- #endregion Aarav -->
-
-      <!-- #region Sofia -->
-      <li class="speakers-item">
-        <div class="social-wrapper">
-          <picture>
-            <source
-              srcset="../img-project/speakers/desc/sofia-garcia.jpg 1x, ../img-project/speakers/desc/sofia-garcia@2x.jpg 2x"
-              media="(min-width:1440px)"
-            />
-            <source
-              srcset="../img-project/speakers/retina/sofia-garcia.jpg 1x, ../img-project/speakers/retina/sofia-garcia@2x.jpg 2x"
-              media="(min-width:768px)"
-            />
-            <img
-              srcset="../img-project/speakers/mob/sofia-garcia@2x.jpg 2x"
-              src="../img-project/speakers/mob/sofia-garcia.jpg"
-              alt="Ms. Sofia Garcia"
-              class="speaker-foto"
-              width="335"
-              height="335"
-            />
-          </picture>
-          <h3 class="speakers-name">Ms. Sofia Garcia</h3>
-          <p class="skeakers-academics-position">
-            Data Scientist & Information Designer
-          </p>
-        </div>
-        <div class="social-wrapper">
-          <p class="speakers-about">
-            Ms. Garcia transforms complex data into compelling visual stories.
-            Her session will cover powerful data visualization techniques that
-            can enhance research, reporting, and student understanding.
-          </p>
-          <ul class="social-list">
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-facebook">/</use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- #endregion Sofia -->
-
-      <!-- #region BEN -->
-      <li class="speakers-item">
-        <div class="social-wrapper">
-          <picture>
-            <source
-              srcset="../img-project/speakers/desc/ben-thompson.jpg 1x, ../img-project/speakers/desc/ben-thompson@2x.jpg 2x"
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="../img-project/speakers/retina/ben-thompson.jpg 1x, ../img-project/speakers/retina/ben-thompson@2x.jpg 2x"
-              media="(min-width: 768px)"
-            />
-            <img
-              srcset="../img-project/speakers/mob/ben-thompson@2x.jpg 2x"
-              src="../img-project/speakers/mob/ben-thompson.jpg"
-              alt="Mr. Ben Thompson"
-              class="speaker-foto"
-              width="335"
-              height="335"
-            />
-          </picture>
-          <h3 class="speakers-name">Mr. Ben Thompson</h3>
-          <p class="skeakers-academics-position">
-            Technology Ethicist & Author
-          </p>
-        </div>
-        <div class="social-wrapper">
-          <p class="speakers-about">
-            Mr. Thompson is a leading voice in the discussion on digital ethics.
-            He will explore the critical ethical considerations of implementing
-            new technologies in education, urging a responsible approach to
-            innovation.
-          </p>
-          <ul class="social-list">
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-linkedIn">/</use>
-              </svg>
-            </li>
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-facebook">/</use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- #endregion BEN -->
-
-      <!-- #region Marco -->
-      <li class="speakers-item">
-        <div class="social-wrapper">
-          <picture>
-            <source
-              srcset="../img-project/speakers/desc/marco-rodriguez.jpg 1x, ../img-project/speakers/desc/marco-rodriguez@2x.jpg 2x"
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="../img-project/speakers/retina/marco-rodriguez.jpg 1x, ../img-project/speakers/retina/marco-rodriguez@2x.jpg 2x"
-              media="(min-width: 768x)"
-            />
-            <img
-              srcset="../img-project/speakers/mob/marco-rodriguez@2x.jpg 2x"
-              src="../img-project/speakers/mob/marco-rodriguez.jpg"
-              alt="Mr. Marco Rodriguez"
-              class="speaker-foto"
-              width="335"
-              height="335"
-            />
-          </picture>
-          <h3 class="speakers-name">Mr. Marco Rodriguez</h3>
-          <p class="skeakers-academics-position">
-            Superintendent & Education Reformer
-          </p>
-        </div>
-        <div class="social-wrapper">
-          <p class="speakers-about">
-            With a career dedicated to transforming public education, Mr.
-            Rodriguez will deliver an inspiring closing keynote, reflecting on
-            the conference's themes and issuing a powerful call to action for
-            all attendees.
-          </p>
-          <ul class="social-list">
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-linkedIn">/</use>
-              </svg>
-            </li>
-            <li class="social-item">
-              <svg class="social-item-icon" width="24" height="24">
-                <use href="../img-project/icons.svg#icon-x-social">/</use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- #endregion Marco -->
-    </ul>
-  </div>
-</section>
-
-      <section class="schedule">
+      <section class="vite-promo">
   <div class="container">
-    <h2 class="schedule-title">Schedule</h2>
-    <p class="text-section">
-      Explore our detailed schedule of presentations, topics, and speakers for
-      the EduConf 2025.
-    </p>
-    <ul class="schedule-speakers">
-      <li class="schedule-items">
-        <p class="time">8:00 AM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">Opening Keynote</p>
-          <div class="tags-wrapper">
-            <p class="tags">In-person</p>
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Dr. Smith</p>
-          <p class="where">Auditorium</p>
-        </div>
-      </li>
-      <li class="schedule-items">
-        <p class="time">9:00 AM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">Panel Discussion</p>
-          <div class="tags-wrapper">
-            <p class="tags">In-person</p>
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Prof. Johnson</p>
-          <p class="where">Main Auditorium</p>
-        </div>
-      </li>
-      <li class="schedule-items">
-        <p class="time">10:00 AM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">Future of Education</p>
-          <div class="tags-wrapper">
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Dr. Brown</p>
-          <p class="where">Webinar Room</p>
-        </div>
-      </li>
-      <li class="schedule-items">
-        <p class="time">11:00 AM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">Innovations in AI</p>
-          <div class="tags-wrapper">
-            <p class="tags">In-person</p>
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Ms. Lee</p>
-          <p class="where">Conference Hall</p>
-        </div>
-      </li>
-      <li class="schedule-items">
-        <p class="time">12:00 PM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">Marketing Strategies</p>
-          <div class="tags-wrapper">
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Mr. Smith</p>
-          <p class="where">Webinar Room</p>
-        </div>
-      </li>
-      <li class="schedule-items">
-        <p class="time">1:00 PM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">Design Thinking Workshop</p>
-          <div class="tags-wrapper">
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Dr. Patel</p>
-          <p class="where">Webinar Room</p>
-        </div>
-      </li>
-      <li class="schedule-items">
-        <p class="time">2:00 PM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">Data Visualization Techniques</p>
-          <div class="tags-wrapper">
-            <p class="tags">In-person</p>
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Ms. Garcia</p>
-          <p class="where">Main Auditorium</p>
-        </div>
-      </li>
-      <li class="schedule-items">
-        <p class="time">3:00 PM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">Ethics in Technology</p>
-          <div class="tags-wrapper">
-            <p class="tags">In-person</p>
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Mr. Thompson</p>
-          <p class="where">Webinar Room</p>
-        </div>
-      </li>
-      <li class="schedule-items">
-        <p class="time">4:00 PM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">Machine Learning Basics</p>
-          <div class="tags-wrapper">
-            <p class="tags">In-person</p>
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Dr. Lee</p>
-          <p class="where">Main Auditorium</p>
-        </div>
-      </li>
-      <li class="schedule-items">
-        <p class="time">5:00 PM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">User Experience Design</p>
-          <div class="tags-wrapper">
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Ms. Patel</p>
-          <p class="where">Webinar Room</p>
-        </div>
-      </li>
-      <li class="schedule-items">
-        <p class="time">6:00 PM</p>
-        <div class="topic-tags-wrapper">
-          <p class="topic">Closing Keynote</p>
-          <div class="tags-wrapper">
-            <p class="tags">In-person</p>
-            <p class="tags">Online</p>
-          </div>
-        </div>
-        <div class="who-where-wrapper">
-          <p class="who">Mr. Rodriguez</p>
-          <p class="where">Lecture Theatre</p>
-        </div>
-      </li>
-    </ul>
-    <a href="register.html" class="scroll-to-registr">Register</a>
-  </div>
-</section>
-
-      <!--======== GALLERY ======== -->
-<section class="gallery">
-  <div class="container">
-    <h2 class="gallery-section">Highlights from previous conferences</h2>
-    <p class="gallery-text">Feel the energy from previous events</p>
-    <ul class="gallery-list">
-      <li class="gallery-li">
-        <div class="gallery-img-wrapper">
-          <img
-            class="gallery-img-big"
-            srcset="./img/gallery-1.jpg 1x, ./img/gallery/gallery-1@2x.jpg 2x"
-            src="./img/gallery/gallery-1.jpg"
-            alt="Conference speaker presenting"
-            width="640"
-            height="640"
-          />
-        </div>
-      </li>
-      <li class="gallery-li">
-        <div class="gallery-img-wrapper">
-          <img
-            class="gallery-img"
-            srcset="./img/gallery/gallery-2.jpg 1x, ./img/gallery/gallery-2@2x.jpg 2x"
-            src="./img/gallery/gallery-2.jpg"
-            alt="Team collaboration workshop"
-            width="304"
-            height="304"
-          />
-        </div>
-      </li>
-      <li class="gallery-li">
-        <div class="gallery-img-wrapper">
-          <img
-            class="gallery-img"
-            srcset="./img/gallery/gallery-3.jpg 1x, ./img/gallery/gallery-3@2x.jpg 2x"
-            src="./img/gallery/gallery-3.jpg"
-            alt="Networking coffee break"
-            width="304"
-            height="304"
-          />
-        </div>
-      </li>
-      <li class="gallery-li">
-        <div class="gallery-img-wrapper">
-          <img
-            class="gallery-img"
-            srcset="./img/gallery/gallery-4.jpg 1x, ./img/gallery/gallery-4@2x.jpg 2x"
-            src="./img/gallery/gallery-4.jpg"
-            alt="Attendee taking notes"
-            width="304"
-            height="304"
-          />
-        </div>
-      </li>
-      <li class="gallery-li">
-        <div class="gallery-img-wrapper">
-          <img
-            class="gallery-img"
-            srcset="./img/gallery/gallery-5.jpg 1x, ./img/gallery/gallery-5@2x.jpg 2x"
-            src="./img/gallery/gallery-5.jpg"
-            alt="Panel discussion"
-            width="304"
-            height="304"
-          />
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-      <!-- ===== TESTIMONIALS ====== -->
-<section class="testimonials">
-  <div class="container">
-    <h2 class="testimonials-h">What Our Attendees Say</h2>
-    <p class="testimonials-text">
-      Hear directly from educators, researchers, and innovators who joined us at
-      our past events.
-    </p>
-    <ul class="testimonials-list">
-      <li class="testimonials-item">
-        <p class="testimonials-item-text">
-          EduConf is an unmissable event. The caliber of speakers was
-          exceptional, and the connections I made with fellow educators have
-          been invaluable for my research and teaching practices. I'm already
-          looking forward to next year.
-        </p>
-        <h3 class="testimonials-item-name">Jane Doe</h3>
-        <h4 class="testimonials-item-position">
-          Professor, Department of Education, Crestwood University
-        </h4>
-      </li>
-      <li class="testimonials-item">
-        <p class="testimonials-item-text">
-          The sessions on AI and instructional design were incredibly
-          insightful. I left with a wealth of new ideas and practical tools to
-          implement in our platform. It’s the most forward-thinking conference
-          in the EdTech space.
-        </p>
-        <h3 class="testimonials-item-name">Maria Flores</h3>
-        <h4 class="testimonials-item-position">
-          PhD Candidate, Institute of Future Studies
-        </h4>
-      </li>
-      <li class="testimonials-item">
-        <p class="testimonials-item-text">
-          As a graduate student, attending was a game-changer. The workshops
-          were practical, and being able to connect with leading researchers in
-          my field was inspiring. I feel energized and more connected to the
-          academic community.
-        </p>
-        <h3 class="testimonials-item-name">Ben Carter</h3>
-        <h4 class="testimonials-item-position">
-          Lead Product Manager, Innovate Learning Ltd.
-        </h4>
-      </li>
-    </ul>
-  </div>
-</section>
-
-      <section class="register-section section">
-  <div class="container register-container">
-    <div class="register-wrapper">
-      <h2 class="register-title">Secure Your Spot</h2>
-      <p class="register-text">
-        Don't miss out on two days of innovation, networking, and learning.
-        Complete your registration in just a few steps and get ready to be
-        inspired at EduConf 2025.
-      </p>
-      <form class="register-form">
-        <label class="register-label" for="user-name">Name*</label>
-        <input
-          class="register-input"
-          type="text"
-          name="user-name"
-          id="user-name"
-          placeholder="Enter your full name"
-          title="Ben Thompson"
-          pattern="^[A-Z][a-z]*[A-Za-z ]+$"
-          required
-        />
-        <label class="register-label" for="user-email">Email*</label>
-        <input
-          class="register-input"
-          type="email"
-          name="user-email"
-          id="user-email"
-          placeholder="Enter your email address"
-          title="user-email@mail.com"
-          required
-          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-        />
-        <button class="register-form-btn" type="submit">Register Now</button>
-      </form>
-    </div>
-    <div class="register-wrapper-img">
-      <picture>
-        <source
-          srcset="../img-project/register-img/desktop/img-register-desktop.jpg 1x, ../img-project/register-img/desktop/img-register-desktop@2x.jpg 2x"
-          media="(min-width: 1440px)"
-          width="640"
-          height="547"
-        />
-        <source
-          srcset="../img-project/register-img/tablet/img-register-tablet.jpg 1x, ../img-project/register-img/tablet/img-register-table@2x.jpg 2x"
-          media="(min-width: 768px)"
-          width="340"
-          height="547"
-        />
+    <div class="vite-promo-thumb">
+      <a
+        class="vite-promo-link"
+        href="https://vitejs.dev/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Link to Vite official website"
+        title="Vite.js  build tool"
+      >
+        <!-- Path to images as from index.html file -->
         <img
-          class="register-welcoming-photo"
-          srcset="../img-project/register-img/mobile/img-register@2x.jpg 2x"
-          src="../img-project/register-img/mobile/img-register.jpg"
-          alt="welcoming-photo"
-          width="335"
-          height="259"
+          class="pic"
+          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
+          alt="Vite logo"
+          width="640"
+          height="640"
         />
-      </picture>
+      </a>
     </div>
+    <h1 class="main-title">
+      <span class="main-title-gradient">Vite</span>
+      Template by
+      <a
+        class="main-title-link"
+        href="https://github.com/goitacademy/vanilla-app-template"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GoIT
+      </a>
+    </h1>
   </div>
 </section>
+
+      <article class="badges">
+  <div class="container">
+    <ul class="badges-list">
+      <li class="badges-item">
+        <a
+          class="badges-link"
+          href="https://www.npmjs.com/package/vite-plugin-html-inject"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          HTML Inject
+        </a>
+      </li>
+      <li class="badges-item">
+        <a
+          class="badges-link"
+          href="https://www.npmjs.com/package/vite-plugin-full-reload"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Full Reload
+        </a>
+      </li>
+      <li class="badges-item">
+        <a
+          class="badges-link"
+          href="https://www.npmjs.com/package/postcss-sort-media-queries"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sort Media Queries
+        </a>
+      </li>
+    </ul>
+  </div>
+</article>
 
     </main>
 
-    
-
-    <div class="burger-menu">
-  <div class="menu-header">
-    <a href="" class="menu-logo">
-      <svg class="menu-logo-icon" widht="158" height="37">
-        <use href="/EduConf/assets/icons-fW9UY4Vi.svg#icon-logo"></use>
-      </svg>
-    </a>
-    <button type="button" class="menu-close-btn">
-      <svg class="menu-close-icon" height="24" width="24">
-        <use href="/EduConf/assets/icons-fW9UY4Vi.svg#icon-close"></use>
-      </svg>
-    </button>
+    <footer class="footer">
+  <div class="container">
+    <p class="footer-desc">
+      Made with ✨ by
+      <a
+        class="footer-link"
+        href="https://goit.global/ua/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GoIT team
+      </a>
+    </p>
   </div>
-  <div class="menu-nav">
-    <ul class="menu-list">
-      <li class="menu-item">
-        <a href="" class="menu-nav-link link">Home</a>
-      </li>
-      <li class="menu-item">
-        <a href="" class="menu-nav-link link">About Us</a>
-      </li>
-      <li class="menu-item">
-        <a href="" class="menu-nav-link link">Speakers</a>
-      </li>
-      <li class="menu-item">
-        <a href="" class="menu-nav-link link">Schedule</a>
-      </li>
-      <li class="menu-item">
-        <a href="" class="menu-nav-link link">Gallery</a>
-      </li>
-      <li class="menu-item">
-        <a href="" class="menu-nav-link link">Testimonials</a>
-      </li>
-    </ul>
-    <button class="menu-register-btn">Register Now</button>
-  </div>
-</div>
+</footer>
 
-
-    
 
   </body>
 </html>
