@@ -27,7 +27,7 @@
     <!-- ! STYLES -->
 
     <script type="module" crossorigin src="/EduConf/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/EduConf/assets/index-CixjcxUT.css">
+    <link rel="stylesheet" crossorigin href="/EduConf/assets/index-DhpERKht.css">
   </head>
   <body>
     
@@ -696,46 +696,64 @@
 </section>
 
       <section class="register-section section">
-  <div class="container">
-    <h2 class="register-title">Secure Your Spot</h2>
-    <p class="register-text">
-      Don't miss out on two days of innovation, networking, and learning.
-      Complete your registration in just a few steps and get ready to be
-      inspired at EduConf 2025.
-    </p>
-    <form class="register-form">
-      <label class="register-label" for="user-name">Name*</label>
-      <input
-        class="register-input"
-        type="text"
-        name="user-name"
-        id="user-name"
-        placeholder="Enter your full name"
-        title="Ben Thompson"
-        pattern="^[A-Z][a-z]*[A-Za-z ]+$"
-        required
-      />
-      <label class="register-label" for="user-email">Email*</label>
-      <input
-        class="register-input"
-        type="email"
-        name="user-email"
-        id="user-email"
-        placeholder="Enter your email address"
-        title="user-email@mail.com"
-        required
-        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-      />
-      <button class="register-form-btn" type="submit">Register Now</button>
-    </form>
-    <img
-      class="register-welcoming-photo"
-      srcset="../img-project/register-img/img-register@2x.jpg 2x"
-      src="../img-project/register-img/img-register.jpg"
-      alt="welcoming-photo"
-      width="335"
-      height="259"
-    />
+  <div class="container register-container">
+    <div class="register-wrapper">
+      <h2 class="register-title">Secure Your Spot</h2>
+      <p class="register-text">
+        Don't miss out on two days of innovation, networking, and learning.
+        Complete your registration in just a few steps and get ready to be
+        inspired at EduConf 2025.
+      </p>
+      <form class="register-form">
+        <label class="register-label" for="user-name">Name*</label>
+        <input
+          class="register-input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Enter your full name"
+          title="Ben Thompson"
+          pattern="^[A-Z][a-z]*[A-Za-z ]+$"
+          required
+        />
+        <label class="register-label" for="user-email">Email*</label>
+        <input
+          class="register-input"
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="Enter your email address"
+          title="user-email@mail.com"
+          required
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        />
+        <button class="register-form-btn" type="submit">Register Now</button>
+      </form>
+    </div>
+    <div class="register-wrapper-img">
+      <picture>
+        <source
+          srcset="../img-project/register-img/desktop/img-register-desktop.jpg 1x, ../img-project/register-img/desktop/img-register-desktop@2x.jpg 2x"
+          media="(min-width: 1440px)"
+          width="640"
+          height="547"
+        />
+        <source
+          srcset="../img-project/register-img/tablet/img-register-tablet.jpg 1x, ../img-project/register-img/tablet/img-register-table@2x.jpg 2x"
+          media="(min-width: 768px)"
+          width="340"
+          height="547"
+        />
+        <img
+          class="register-welcoming-photo"
+          srcset="../img-project/register-img/mobile/img-register@2x.jpg 2x"
+          src="../img-project/register-img/mobile/img-register.jpg"
+          alt="welcoming-photo"
+          width="335"
+          height="259"
+        />
+      </picture>
+    </div>
   </div>
 </section>
 
