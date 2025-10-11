@@ -1,0 +1,139 @@
+/* mobile */
+@media screen and (min-width:375px) {
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* desktop */
+@media screen and (min-width:768px) {
+    .about-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/* mobile */
+@media screen and (min-width:375px) {
+    .about-section {
+        padding: 64px 0;
+    }
+}
+
+/* tablet */
+
+/* desktop */
+@media screen and (min-width:1440px) {
+    .about-section {
+        padding: 92px 0;
+    }
+}
+
+/* mobile */
+@media screen and (min-width:375px) {
+    .about-section .container {
+        width: 335px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:768px) {
+    .about-section .container {
+        width: 704px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width:1440px) {
+    .about-section .container {
+        width: 1312px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}
+
+
+/* mobile */
+@media screen and (min-width:375px) {
+    .about-title {
+        font-size: 32px;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        color: #03030a;
+        font-family: "Teachers", sans-serif;
+    }
+}
+
+/* tablet */
+
+/* desktop */
+@media screen and (min-width:1440px) {
+    .about-title {
+        font-size: 48px;
+    }
+}
+
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #03030a;
+
+    font-family: "Inter", sans-serif;
+}
+
+/* mobile */
+@media screen and (min-width:375px) {
+    .about-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 24px;
+        width: 336px;
+        margin-bottom: 24px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:768px) {
+    .about-content-wrapper {
+        width: 340px;
+        margin-right: 24px;
+        margin-bottom: 0;
+    }
+}
+
+/* desktop */
+@media screen and (min-width:1440px) {
+    .about-content-wrapper {
+        width: 640px;
+        margin-right: 32px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:768px) {
+    .about-img-wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+p {
+    margin: 0;
+}
