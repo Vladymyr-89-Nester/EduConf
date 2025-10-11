@@ -1,13 +1,8 @@
 .logo-header {
-  display: flex;
-  align-items: center;
   line-height: 0;
-  width: 158px;
-  height: 37px;
 }
 
-.logo-header-icon,
-.logo-header-icon-text {
+.logo-header-icon {
   fill: #03030a;
 }
 
@@ -55,11 +50,6 @@
 
   .header-nav-list {
     gap: 32px;
-  }
-
-  .header-nav-item {
-    padding: 23.5px 0;
-    font-size: 16px;
   }
 
   .header-btn {
