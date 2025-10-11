@@ -1,108 +1,89 @@
-@media screen and (max-width: 1439px) {
-  .header-nav-list,
-  .header-register-btn {
-    display: none;
-  }
-}
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logo-header {
   display: flex;
-  justify-content: center;
   align-items: center;
+  line-height: 0;
+  width: 158px;
+  height: 37px;
 }
 
-.logo-header-icon {
-  max-width: 164px;
+.logo-header-icon,
+.logo-header-icon-text {
+  fill: #03030a;
 }
 
-.burger-menu-btn {
-  display: flex;
-  align-items: center;
-  border: none;
-  background: transparent;
-  width: 48px;
-  height: 48px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
+@media screen and (max-width: 1439px) {
 
-/* TABLET */
-
-@media screen and (min-width: 768px) {
-  .header.container {
-    max-width: 768px;
-    padding: 0px 32px;
-  }
-}
-
-/* DESKTOP */
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding: 0px 64px;
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 10px;
   }
 
-  .burger-menu-btn,
-  .burger-menu {
+  .burger-menu-header {
+    padding: 0;
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    fill: #03030a;
+  }
+
+  .header-btn,
+  .header-nav {
     display: none;
   }
 
-  .header-nav {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  .burger-menu-header {
+    display: none;
+  }
+
+  .header-container,
+  .header-nav-list {
     display: flex;
     align-items: center;
   }
 
-  .logo-header-icon {
+  .logo-header {
     margin-right: 24px;
   }
 
   .header-nav-list {
-    display: flex;
     gap: 32px;
-    white-space: nowrap;
   }
 
-  .header-nav-link {
-    display: inline-flex;
-    align-items: center;
-    font-weight: 400;
+  .header-nav-item {
+    padding: 23.5px 0;
     font-size: 16px;
-    width: 100%;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 
-  .header-register-btn {
+  .header-btn {
+    margin-left: auto;
+    font-size: 16px;
     font-weight: 500;
-    font-size: 16px;
-    border: 1px solid #3444c5;
+    line-height: 1.5;
+    min-width: 192px;
+    padding: 8px 44.5px;
     border-radius: 6px;
-    width: 192px;
-    height: 44px;
-    color: #fff;
-    background: #3444c5;
+    border: 1px solid #3444c5;
+    background-color: #3444c5;
+    color: #FFFFFF;
+    transition: border 250ms linear, background-color 250ms linear, color 250ms linear;
   }
 
-  .header-register-btn:hover,
-  .header-register-btn:focus {
+  .header-btn:hover,
+  .header-btn:focus {
+    border: 1px solid #3444c5;
+    background-color: #FFFFFF;
     color: #03030a;
-    background: transparent;
   }
 
-  .header-register-btn:active {
-    color: #03030a;
-    background: #d6d9f3;
-  }
-
-  .header-register-btn:disabled {
-    color: #fff;
-    background: #3444c5;
-    opacity: 0.3;
+  .header-btn:active {
+    background-color: #d6d9f3;
   }
 }
