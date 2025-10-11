@@ -53,30 +53,12 @@
     gap: 32px;
   }
 
-  .header-nav-item {
-    padding: 23.5px 0;
-    font-size: 16px;
-  }
-
-  .heder-nav-link {
+  .header-nav-link {
     display: inline-block;
     position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .header-btn {
-    margin-left: auto;
+    padding: 23.5px 0;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    min-width: 192px;
-    padding: 8px 44.5px;
-    border-radius: 6px;
-    border: 1px solid #3444c5;
-    background-color: #3444c5;
-    color: #ffffff;
-    transition: border 250ms linear, background-color 250ms linear,
-      color 250ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-nav-link::after {
@@ -89,17 +71,6 @@
     background-color: #03030a;
     opacity: 0;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .header-btn:hover,
-  .header-btn:focus {
-    border: 1px solid #3444c5;
-    background-color: #ffffff;
-    color: #03030a;
-  }
-
-  .header-btn:active {
-    background-color: #d6d9f3;
   }
 
   .header-nav-link:hover::after,
@@ -117,5 +88,31 @@
 
   .header-nav-link:disabled {
     opacity: 0.3;
+  }
+
+  .header-btn {
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    min-width: 192px;
+    padding: 8px 44.5px;
+    border-radius: 6px;
+    border: 1px solid #3444c5;
+    background-color: #3444c5;
+    color: #ffffff;
+    transition: border 250ms linear, background-color 250ms linear,
+      color 250ms linear;
+  }
+
+  .header-btn:hover,
+  .header-btn:focus {
+    border: 1px solid #3444c5;
+    background-color: #ffffff;
+    color: #03030a;
+  }
+
+  .header-btn:active {
+    background-color: #d6d9f3;
   }
 }
