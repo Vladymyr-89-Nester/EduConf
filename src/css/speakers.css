@@ -129,7 +129,10 @@ region 1 */
   display: flex;
   gap: 14px;
 }
-.social-item {
+.social-item-link {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-item-icon {
+.social-item-link:hover,
+.social-item-link:focus {
+  fill: #3444c5;
 }
