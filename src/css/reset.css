@@ -1,8 +1,10 @@
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #03030a;
   line-height: 1.5;
-  background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #ffffff;
 }
 
 h1,
@@ -36,13 +38,57 @@ img {
   height: auto;
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px
 }
 
 .section {
   padding-top: 64px;
   padding-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 64px
+  }
+
+  .section {
+    padding-top: 92px;
+    padding-bottom: 92px;
+  }
 }
