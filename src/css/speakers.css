@@ -24,18 +24,24 @@ region 1 */
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .speakers-list {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .speakers-list {
     justify-content: space-between;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 }
 
