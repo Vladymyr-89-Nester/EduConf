@@ -68,7 +68,7 @@
   height: 1px;
   background-color: #ffffff;
   opacity: 0;
-  transition: color 250ms linear, background-color 250ms linear;
+  transition: 250ms linear;
 }
 
 .footer-link:hover::after,
