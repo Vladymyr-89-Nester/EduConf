@@ -72,10 +72,12 @@
         color: #ffffff;
         border: 1px solid transparent;
         margin-bottom: 40px;
+        transition: border 250ms linear, background-color 250ms linear,
+        color 250ms linear;
 }
 .hero-button:hover,
 .hero-button:focus {
-    border: 2px solid #3444C5;
+    border: 1px solid #3444c5;
     background-color: #ffffff;
     border-color: #3444C5;
     color: #03030A;
@@ -153,15 +155,13 @@
         margin-left: 0;
         margin-right: 0;
         
-    
     }
         
     .hero-text {
         max-width: 1078px;
         height: 54px;
         margin-bottom: 0;
-        
-       
+
    }
    .button-hero-container {
     display: flex;
