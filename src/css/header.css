@@ -11,15 +11,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 17px;
-    padding-bottom: 10px;
   }
 
   .burger-menu-header {
-    padding: 0;
-    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-    background-color: transparent;
+    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px;
     fill: #03030a;
   }
 
