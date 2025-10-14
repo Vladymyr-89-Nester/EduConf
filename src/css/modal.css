@@ -9,6 +9,7 @@
     opacity: 0;
     pointer-events: none;
     overflow-y: auto;
+    transition: opacity 250ms linear, visibility 250ms linear;
 
     display: flex;
     justify-content: center;
