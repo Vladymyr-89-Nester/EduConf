@@ -59,7 +59,7 @@
     white-space: wrap;
 }
 .hero-button {
-    display: block;
+    display: flex;
     padding: 10px 124px;
     width: 335px;
         height: 44px;
@@ -69,6 +69,7 @@
         font-size: 16px;
         line-height: 150%;
         white-space: nowrap;
+justify-content: center;
         color: #ffffff;
         border: 1px solid transparent;
         margin-bottom: 40px;
@@ -154,7 +155,7 @@
         height: 54px;
         margin-left: 0;
         margin-right: 0;
-        
+
     }
         
     .hero-text {
@@ -169,7 +170,7 @@
     height: 54px;
    }
     .hero-button {
-        display: block;
+        display: flex;
     border-radius: 6px;
         padding: 10px 24px;
         width: 193px;
