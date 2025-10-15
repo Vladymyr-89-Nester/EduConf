@@ -2,6 +2,9 @@
 :root {
   --main-color: #03030a;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* #endregion TOTAL */
 
