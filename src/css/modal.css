@@ -43,7 +43,6 @@
   --color-scheme-2-foreground: var(--color-neutral-darkest);
   --color-red: #9c0000;
 }
-
 @media screen {
   .backdrop {
     background: rgba(0, 0, 0, 0.25);
@@ -55,13 +54,12 @@
     opacity: 0;
     pointer-events: none;
     overflow-y: auto;
+    transition: opacity 250ms linear, visibility 250ms linear;
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 64px;
-    /* transition: opacity 250 cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250 cubic-bezier(0.4, 0, 0.2, 1); */
   }
   .backdrop.is-open {
     opacity: 1;
@@ -69,9 +67,6 @@
   }
   .modal {
     position: relative;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     padding: 56px 20px;
     border-radius: 16px;
     display: flex;
@@ -121,6 +116,8 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-white);
+    transition: border 250ms linear, background-color 250ms linear,
+      color 250ms linear;
   }
   .modal-button:hover,
   .modal-button:focus {
