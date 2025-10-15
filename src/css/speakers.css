@@ -96,28 +96,30 @@ region 1 */
   line-height: 1.5;
   color: var(--main-color);
   padding-bottom: 16px;
-  width: 331px;
+  /* width: 331px; */
 }
 
 @media screen and (min-width: 768px) {
-  .speakers-about {
+  /* .speakers-about {
     width: 333px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1440px) {
-  .speakers-about {
+  /* .speakers-about {
     width: 302px;
-  }
+  } */
 }
 
 .social-list {
   display: flex;
   gap: 14px;
 }
+
 .social-item-link {
   transition: fill 250ms linear;
 }
+
 .social-item-link:hover,
 .social-item-link:focus {
   fill: #3444c5;
