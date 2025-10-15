@@ -1,3 +1,48 @@
+:root {
+  --color-scheme-1-background: var(--color-white);
+  --color-neutral-darkest: #03030a;
+  --color-scheme-1-border: var(--color-neutral-darkest);
+  --color-scheme-1-text: var(--color-neutral-darkest);
+  --color-neutral-lighter: #d9d9da;
+  --color-white: #fff;
+  --color-neutral-lightest: #f2f2f2;
+  --color-neutral-light: #b3b3b5;
+  --color-neutral: #818184;
+  --color-neutral-dark: #4e4e53;
+  --color-neutral-darker: #1c1c22;
+  --opacity-transparent: rgba(255, 255, 255, 0);
+  --color-scheme-1-foreground: var(--color-white);
+  --color-scheme-1-accent: var(--color-governor-bay);
+  --opacity-white-5: rgba(255, 255, 255, 0.05);
+  --opacity-white-10: rgba(255, 255, 255, 0.1);
+  --opacity-white-15: rgba(255, 255, 255, 0.15);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
+  --opacity-white-30: rgba(255, 255, 255, 0.3);
+  --opacity-white-40: rgba(255, 255, 255, 0.4);
+  --opacity-white-50: rgba(255, 255, 255, 0.5);
+  --opacity-white-60: rgba(255, 255, 255, 0.6);
+  --opacity-neutral-darkest-5: rgba(3, 3, 10, 0.05);
+  --opacity-neutral-darkest-10: rgba(3, 3, 10, 0.1);
+  --opacity-neutral-darkest-15: rgba(3, 3, 10, 0.15);
+  --opacity-neutral-darkest-20: rgba(3, 3, 10, 0.2);
+  --opacity-neutral-darkest-30: rgba(3, 3, 10, 0.3);
+  --opacity-neutral-darkest-40: rgba(3, 3, 10, 0.4);
+  --opacity-neutral-darkest-50: rgba(3, 3, 10, 0.5);
+  --opacity-neutral-darkest-60: rgba(3, 3, 10, 0.6);
+  --color-governor-bay-lightest: #eaecf9;
+  --color-governor-bay-lighter: #d6d9f3;
+  --color-governor-bay-light: #707cd6;
+  --color-governor-bay: #3444c5;
+  --color-governor-bay-dark: #29369d;
+  --color-governor-bay-darker: #141b4e;
+  --color-governor-bay-darkest: #0f143b;
+  --color-scheme-2-text: var(--color-white);
+  --color-scheme-2-background: var(--color-neutral-darkest);
+  --color-scheme-2-border: var(--color-white);
+  --color-scheme-2-accent: var(--color-white);
+  --color-scheme-2-foreground: var(--color-neutral-darkest);
+  --color-red: #9c0000;
+}
 @media screen {
   .backdrop {
     background: rgba(0, 0, 0, 0.25);
@@ -29,7 +74,7 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 16px;
-    background-color: white;
+    background-color: var(--color-scheme-1-background);
     min-height: 776px;
     width: 335px;
   }
@@ -41,9 +86,9 @@
     line-height: 0;
     width: 32px;
     height: 32px;
-    background-color: white;
+    background-color: var(--color-white);
     border: 1px;
-    border-color: var(--color-neutral-darkest);
+    border-color: var(--color-scheme-1-text);
   }
   .modal-title {
     font-weight: 700;
@@ -51,37 +96,37 @@
     line-height: 1.2;
     letter-spacing: -0.01em;
     text-align: center;
-    color: var(--color-neutral-darkest);
+    color: var(--color-scheme-1-text);
   }
   .modal-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
-    color: var(--color-neutral-darkest);
+    color: var(--color-scheme-1-text);
   }
   .modal-button {
-    border: 1px solid #3444c5;
+    border: 1px solid var(--color-governor-bay);
     border-radius: 6px;
     padding: 10px 24px;
     width: 295px;
     height: 44px;
-    background-color: #3444c5;
+    background-color: var(--color-governor-bay);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: white;
+    color: var(--color-white);
     transition: border 250ms linear, background-color 250ms linear,
       color 250ms linear;
   }
   .modal-button:hover,
   .modal-button:focus {
     background-color: transparent;
-    color: var(--color-neutral-darkest);
+    color: var(--color-scheme-1-text);
   }
   .modal-button:active {
-    background-color: #d6d9f3;
-    color: var(--color-neutral-darkest);
+    background-color: var(--color-governor-bay-lighter);
+    color: var(--color-scheme-1-text);
   }
 }
 @media screen and (min-width: 768px) {
