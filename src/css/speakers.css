@@ -115,3 +115,10 @@ region 1 */
   display: flex;
   gap: 14px;
 }
+.social-item-link {
+  transition: fill 250ms linear;
+}
+.social-item-link:hover,
+.social-item-link:focus {
+  fill: #3444c5;
+}

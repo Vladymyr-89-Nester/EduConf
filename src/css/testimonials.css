@@ -1,0 +1,115 @@
+/**
+  |============================
+  | TESTIMONIALS SECTION
+  |============================
+*/
+
+/* ============= MOBILE (BASE STYLES) ============= */
+.testimonials {
+  padding: 64px 0;
+}
+
+.testimonials .container {
+  max-width: 375px;
+  padding: 0 20px;
+}
+
+.testimonials-title {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #03030a;
+  margin-bottom: 24px;
+}
+
+.testimonials-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #03030a;
+  margin-bottom: 40px;
+}
+
+.testimonials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.testimonials-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.testimonials-quote {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #03030a;
+}
+
+.testimonials-photo {
+  width: 56px;
+  height: 57px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonials-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #03030a;
+}
+
+.testimonials-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #03030a;
+}
+
+/* ============= TABLET (768px+) ============= */
+@media screen and (min-width: 768px) {
+  .testimonials .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .testimonials-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .testimonials-text {
+    width: 520px;
+  }
+}
+
+/* ============= DESKTOP (1440px+) ============= */
+@media screen and (min-width: 1440px) {
+  .testimonials {
+    padding: 92px 0;
+  }
+
+  .testimonials .container {
+    padding: 0 64px;
+    max-width: 1440px;
+  }
+
+  .testimonials-title {
+    font-size: 48px;
+  }
+  .testimonials-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
